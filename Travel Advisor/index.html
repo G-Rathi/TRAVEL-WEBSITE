@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    <title>Travel Advisor</title>
+</head>
+
+<body>
+
+    <!-- <------------Nav Bar----------------------------------->
+
+    <div class="nav_container">
+        <div class="logo_name">
+            <img class="logo" src="https://i.pinimg.com/736x/de/a0/f3/dea0f3b7f480b1151c08db4a402a43b9.jpg"
+                alt="image not found">
+            <span class="name">Travel Advisor</span>
+        </div>
+
+        <div class="link_container">
+            <a class="home" href="#"><i class="fa-solid fa-house"></i>HOME</a>
+
+
+            <!-- <------DropDown Menu----->
+
+            <div class="dropdown">
+                <a class="places p_btn" href="#"><i class="fa-solid fa-earth-asia"></i>PLACES
+                    <span class="downArrow fa-solid fa-angle-down "></span>
+                    <!-- <span class="upArrow fa-solid fa-angle-up"></span> -->
+                </a>
+
+                <div class="dropdown_menu">
+                    <ul>
+                        <li><a class='drop1' href="#">India</a></li>
+
+                        <li><a class='drop2' href="#">Japan</a></li>
+
+                        <li><a class='drop3' href="#">Malaysia</a></li>
+
+                        <li><a class='drop4' href="#">Colombia</a></li>
+
+                        <li><a class='drop5' href="#">Kuwait</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- <-----DropDown Menu End---->
+
+            <a class="contact" href="#"><i class="fa-solid fa-phone"></i>CONTACT US</a>
+
+            <a class="about" href="#"><i class="fa-solid fa-circle-info"></i>ABOUT US</a>
+        </div>
+    </div>
+
+
+
+    <!-- <------------------Main section--------------------------------------->
+
+    <div class="main_section">
+
+        <!-- <------------Slider--------------->
+
+        <div class="slider_container">
+
+            <!-- <h1>Image Slider</h1> -->
+            <div class="slide-container">
+                <div class="slide fade Slider_image1">
+                    <img src='https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'
+                        alt=''>
+                </div>
+                <div class="slide fade Slider_image2">
+                    <img src='https://images.unsplash.com/photo-1528127269322-539801943592?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'
+                        alt=''>
+                </div>
+                <div class="slide fade Slider_image3">
+                    <img src='https://images.unsplash.com/photo-1616895727759-dd84a2690433?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'
+                        alt=''>
+                </div>
+                <div class="slide fade Slider_image4">
+                    <img src='https://images.unsplash.com/photo-1606820854416-439b3305ff39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'
+                        alt=''>
+                </div>
+
+                <a href="#" class="prev" title="Previous">&#10094</a>
+                <a href="#" class="next" title="Next">&#10095</a>
+            </div>
+
+            <div class="dots-container">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+
+
+
+        <!-- <----------------Table----------------->
+
+        <hr>
+
+
+        <div class="table_btn">
+            <button class="btn table_button">Show Table</button>
+        </div>
+
+        <div class="table_container">
+            <table id="table">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                </tr>
+                <!-- <tr id="tr">
+                        <th id="id"></th>
+                        <td id="name"></td>
+                        <td id="username"></td>
+                        <td id="table_email"></td>
+                    </tr> -->
+                <!-- <tr>
+                        <th>2.</th>
+                        <td>ABC</td>
+                        <td>+91-97********</td>
+                        <td>India</td>
+                    </tr>
+                    <tr>
+                        <th>3.</td>
+                        <td>INF</td>
+                        <td>+81-98********</td>
+                        <td>Japan</td>
+                    </tr>
+                    <tr>
+                        <th>4.</td>
+                        <td>MSG</td>
+                        <td>+965-92********</td>
+                        <td>Kuwait</td>
+                    </tr>
+                    <tr>
+                        <th>5.</td>
+                        <td>AFC</td>
+                        <td>+60-94********</td>
+                        <td>Malaysia</td>
+                    </tr> -->
+            </table>
+        </div>
+
+
+
+
+
+
+
+        <!-- <-------------Cards------------------------------->
+
+        <div class="card_container">
+
+            <div class="card card1">
+                <div class="card_img image1" id="cardImage"></div>
+
+                <div class="card_text"><span>TRAVEL</span>
+                    <h3>TRIP 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iure aspernatur consequatur
+                        corrupti error, quasi omnis nemo mollitia! Dicta, hic quos natus sequi consequuntur vitae
+                        tempora quae delectus voluptatum vel.</p>
+                    <button class="btn apply_btn">APPLY</button>
+                </div>
+            </div>
+
+            <div class="card card2">
+                <div class="card_img image2" id="cardImage"></div>
+
+                <div class="card_text"><span>TRAVEL</span>
+                    <h3>TRIP 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iure aspernatur consequatur
+                        corrupti error, quasi omnis nemo mollitia! Dicta, hic quos natus sequi consequuntur vitae
+                        tempora quae delectus voluptatum vel.</p>
+                    <button class="btn apply_btn">APPLY</button>
+                </div>
+            </div>
+
+            <div class="card card3">
+                <div class="card_img image3" id="cardImage"></div>
+
+                <div class="card_text"><span>TRAVEL</span>
+                    <h3>TRIP 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iure aspernatur consequatur
+                        corrupti error, quasi omnis nemo mollitia! Dicta, hic quos natus sequi consequuntur vitae
+                        tempora quae delectus voluptatum vel.</p>
+                    <button class="btn apply_btn">APPLY</button>
+                </div>
+            </div>
+
+            <div class="card card4">
+                <div class="card_img image4" id="cardImage"></div>
+
+                <div class="card_text"><span>TRAVEL</span>
+                    <h3>TRIP 4</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iure aspernatur consequatur
+                        corrupti error, quasi omnis nemo mollitia! Dicta, hic quos natus sequi consequuntur vitae
+                        tempora quae delectus voluptatum vel.</p>
+                    <button class="btn apply_btn">APPLY</button>
+                </div>
+            </div>
+
+            <div class="card card5">
+                <div class="card_img image5" id="cardImage"></div>
+
+                <div class="card_text"><span>TRAVEL</span>
+                    <h3>TRIP 5</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iure aspernatur consequatur
+                        corrupti error, quasi omnis nemo mollitia! Dicta, hic quos natus sequi consequuntur vitae
+                        tempora quae delectus voluptatum vel.</p>
+                    <button class="btn apply_btn">APPLY</button>
+                </div>
+            </div>
+
+            <div class="card card6">
+                <div class="card_img image6" id="cardImage"></div>
+
+                <div class="card_text"><span>TRAVEL</span>
+                    <h3>TRIP 6</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iure aspernatur consequatur
+                        corrupti error, quasi omnis nemo mollitia! Dicta, hic quos natus sequi consequuntur vitae
+                        tempora quae delectus voluptatum vel.</p>
+                    <button class=" btn apply_btn">APPLY</button>
+                </div>
+            </div>
+
+            <div class="card card7">
+                <div class="card_img image7" id="cardImage"></div>
+
+                <div class="card_text"><span>TRAVEL</span>
+                    <h3>TRIP 7</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iure aspernatur consequatur
+                        corrupti error, quasi omnis nemo mollitia! Dicta, hic quos natus sequi consequuntur vitae
+                        tempora quae delectus voluptatum vel.</p>
+                    <button class=" btn apply_btn">APPLY</button>
+                </div>
+            </div>
+
+            <div class="card card8">
+                <div class="card_img image8" id="cardImage"></div>
+
+                <div class="card_text"><span>TRAVEL</span>
+                    <h3>TRIP 8</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iure aspernatur consequatur
+                        corrupti error, quasi omnis nemo mollitia! Dicta, hic quos natus sequi consequuntur vitae
+                        tempora quae delectus voluptatum vel.</p>
+                    <button class=" btn apply_btn">APPLY</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- <------------Upload File-------------->
+
+        <div class="upload_container">
+            <div class="file_UploadBtn">
+                <div class="upload_file">
+                    <input class="file" type="file" id="file_input">
+                    <!-- <label for="uploadBox">Select Files</label></div> -->
+
+                    <button class=" btn upload">Upload File</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- <hr> -->
+
+
+
+
+        <!-- <-------------Footer------------->
+
+        <footer class="footer">
+            <div class="footer_container">
+                <div class="footer_row">
+                    <div class="footer_column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate programm</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_column">
+                        <h4>Get Help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_column">
+                        <h4>Travel Tips</h4>
+                        <ul>
+                            <li><a href="#">Start Here</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Travel Insurance</a></li>
+                            <li><a href="#">Destinations</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_column">
+                        <h4>Follow us</h4>
+                        <div class="social_links">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="email">
+                            <input type="email" class="email_place" placeholder="Enter your email address">
+                            <button class="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class='copy_rights'>&copy; 2022 Created by Name All rights reserved.</div>
+        </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Slab:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
+}
+
+.btn{
+  cursor: pointer;
+}
+
+/* <---------------------NavBar---------------------------> */
+
+
+.nav_container{
+    background-color: rgb(40, 40, 77);
+    display: flex;
+    align-items: center;
+    height: 6rem;
+    width: 100%;
+    /* position: fixed; */
+}
+
+.logo_name{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin: 10px;
+    width: 5rem;
+    /* height: auto; */
+    margin: 2rem 2rem;
+}
+
+.name{
+   font-size: 3rem;
+   color: aqua;
+   position: absolute;
+   margin-left: 165px;
+}
+
+.link_container{
+    position: absolute;
+    margin-left: 50rem;
+    display: flex
+}
+
+a{
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 20px;
+    color: #fff;
+
+}
+
+a:hover{
+  color: aqua;
+}
+
+a i{
+  padding: 5px;
+  font-size: 18px;
+}
+
+.downArrow{
+  display: inline;
+}
+
+.upArrow{
+  display: none;
+}
+
+
+
+/* <------------------DropDown Menu-----------> */
+
+.dropdown_menu{
+  display: none;
+  margin-left: 20px;
+  position: absolute;
+  top: 65px;
+  background-color: rgb(40, 40, 77);
+  border-radius: 10px;
+  border: 2px solid grey;
+  /* height: 150px; */
+  justify-content: space-between;
+  z-index: 1;
+  
+}
+
+.dropdown_menu ul{
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown_menu ul li{
+  list-style: none;
+  text-align: center;
+  border: 1px groove;
+  border-radius: 7px;
+  margin: 2px ;
+}
+
+.dropdown_menu ul li:hover{
+  background-color: grey;
+  border-radius: 10px;
+}
+
+
+/* <----------------------Main Section---------------> */
+
+
+.main_section{
+    background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000");
+    background-repeat: no-repeat;
+    /* height: 50px; */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* <--------------------Slider--------------------> */
+
+
+.slide-container .prev,
+.slide-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.slide-container .prev:hover,
+.slide-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.slide-container .prev {
+    left: 2px;
+  }
+  
+  .slide-container .next {
+    right: 2px;
+  }
+  
+  .dots-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .dots-container .dot {
+    cursor: pointer;
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    color: #333;
+    border-radius: 50%;
+    background-color: #dfd6ce;
+  }
+  
+  .dots-container .dot.active {
+    border: 2px solid green;
+  }
+
+  .slide-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+  }
+  
+  .slide-container .slide {
+    /* display: none; */
+    width: 100%;
+    margin-top: 15px;
+  }
+  
+  .slide-container .slide.fade {
+    animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  }
+  
+  .slide-container .slide img {
+    width: 100%;
+    height: 310px;
+    /* display: none; */
+  }
+
+
+/* <---------------silder end---------------------> */
+
+hr{
+  max-width: 800px;
+  margin: auto;
+}
+
+
+/* <----------- Show Table Button ---------> */
+.table_btn{
+  margin: 5px 0 10px 0px;
+  text-align: center;
+}
+.table_button{
+  background-color: wheat;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 7px;
+  width: 150px;
+  height: 50px;
+  transition: all 0.3s;
+}
+
+.table_button:hover{
+  color: white;
+  cursor: pointer;
+  background-color: rgb(40, 40, 77);
+  border-radius: 7px;
+}
+
+/* <----------- Table --------> */
+.table_container{
+  text-align: center;
+  margin:0 400px;
+  display: none;
+  /* transition: all 0.9s; */
+}
+
+table, th, td{
+    border-style: groove;
+}
+table{
+  display: inline-block;
+}
+
+
+
+
+/* <---------------------------Cards----------------------------> */
+
+
+.card_container{
+    /* border: 5px solid black; */
+    display: flex;
+    max-width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card{
+    width:25%;
+    /* height: 439px; */
+    margin: 20px 5px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card_text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+
+
+/* <------------- Card Image start----------> */
+.card_img{
+  width: 100%;
+  height: 100%;
+  /* border-top-left-radius: 20px;
+  border-top-right-radius: 20px; */
+}
+
+
+
+.card_img img{
+  padding: 0;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+p{
+  text-align: center;
+}
+
+/* <----------- Crad Image End ---------------> */
+
+
+
+
+/* <---------------------Upload File-----------------> */
+
+.upload_container{
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+}
+.file_UploadBtn{
+  display: flex;
+  justify-content: center;
+  /* border: 5px solid grey; */
+  align-items: center;
+  width: 500px;
+  height: 95px;
+}
+
+.upload_file{
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  position: absolute  ;
+  border-radius: 5px;
+  /* width: 328px; */
+}
+
+.file{
+  border: 2px solid blue;
+}
+
+
+
+.upload{
+  /* margin-right: 50px; */
+  padding: 1px;
+  font-size: medium;
+  border: 2px solid black;
+  border-radius: 2px;
+  
+}
+
+.upload:hover{
+  background-color: lightgrey;
+  font-weight: bold;
+}
+
+
+
+
+
+/* <---------------------Footer---------------------------> */
+
+.footer{
+  background-color: rgb(40, 40, 77);
+  padding: 70px 0;
+  /* line-height: 1.5; */
+  height: 358px;
+}
+
+.footer_container{
+  max-width: 90%;
+  margin: auto;
+  /* border: 2px solid red; */
+}
+
+.footer_row{
+  display: flex;
+}
+
+.footer_column{
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer_column>h4{
+  margin-bottom: 35px;
+  color: white;
+  font-size: 18px;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.footer_column>h4::before{
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  background-color: rgb(228, 9, 9);
+  height: 2px;
+  /* box-sizing: border-box; */
+  width: 50px;
+}
+
+.footer_column>ul>li>a{
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.footer_column>ul{
+  list-style: none;
+  margin-left: 0;
+}
+
+.footer_column>ul>li::not(:last-child){
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.footer_column>ul>li>a{
+  display: block;
+  font-size: 16px;
+  color: rgb(158, 158, 158);
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+
+.footer_column>ul>li>a:hover{
+  color: rgb(209, 206, 206);
+  padding-left: 8px;
+}
+
+.social_links{
+  display: flex;
+  width: 210px;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.social_links>a{
+  color: white;
+  /* height: 40px; */
+  /* width: 210px; */
+  /* background-color: rgb(97, 96, 96); */
+  margin: 0 10px 10px 0;
+  text-align: center;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.social_links>a:hover{
+  color: black;
+  background-color: white;
+  padding: 2px 0;
+}
+
+.email{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute; 
+  width: 205px;
+  height: 50px;
+}
+
+.email_place{
+  border-radius: 5px;
+  text-align: center;
+  border: 2px solid rgb(3, 3, 3);
+}
+
+.submit{
+  border-radius: 5px;
+  height: 24px;
+  background-color: rgb(136, 60, 60);
+  color: white;
+}
+.submit:hover{
+  background-color: rgb(40, 40, 104);
+  color: white;
+  cursor: pointer;
+  /* font-weight: bold; */
+}
+
+/* <--------------------- copy_rights ---------------> */
+
+.footer>hr{
+  margin: 49px auto 8px auto;
+}
+
+.copy_rights{
+  display: flex;
+  justify-content: center;
+  color: rgb(158, 158, 158);
+}
